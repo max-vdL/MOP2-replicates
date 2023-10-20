@@ -66,7 +66,7 @@ if (params.resume) exit 1, "Are you making the classical --resume typo? Be caref
 if (params.GPU != "ON" && params.GPU != "OFF") exit 1, "Please specify ON or OFF in GPU processors are available"
 
 // include functions, outdirs from other files
-evaluate(new File("../outdirs.nf"))
+evaluate(new File("$baseDir/../outdirs.nf"))
 def local_modules = file("$baseDir/../local_modules.nf")
 def subworkflowsDir = "${baseDir}/../BioNextflow/subworkflows"
 joinScript = file("$baseDir/bin/join.r")
