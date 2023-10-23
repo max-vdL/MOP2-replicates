@@ -102,10 +102,10 @@ outputReport   = file("${outputMultiQC}/multiqc_report.html")
 /*
 * move old multiQCreport
 */
-if( outputReport.exists() ) {
-  log.info "Moving old report to multiqc_report.html multiqc_report.html.old"
-  outputReport.moveTo("${outputMultiQC}/multiqc_report.html.old")
-}
+// if( outputReport.exists() ) {
+//   log.info "Moving old report to multiqc_report.html multiqc_report.html.old"
+//   outputReport.moveTo("${outputMultiQC}/multiqc_report.html.old")
+// }
 
 /*
 * This is default value in case guppy will be used for RNA demultiplexing
