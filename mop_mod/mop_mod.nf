@@ -51,7 +51,7 @@ reference = file(params.reference)
 if( !reference.exists() ) exit 1, "Missing reference file: ${reference}!"
 
 // include functions, outdirs from other files
-evaluate(new File("../outdirs.nf"))
+evaluate(new File("$baseDir/../outdirs.nf"))
 def local_modules = file("$baseDir/../local_modules.nf")
 
 def subworkflowsDir = "${baseDir}/../BioNextflow/subworkflows"

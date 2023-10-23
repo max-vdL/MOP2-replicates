@@ -40,7 +40,7 @@ if (params.help) exit 1
 if (params.resume) exit 1, "Are you making the classical --resume typo? Be careful!!!! ;)"
 
 // include functions, outdirs from other files
-//evaluate(new File("../outdirs.nf"))
+evaluate(new File("$baseDir/../outdirs.nf"))
 def local_modules = file("$baseDir/../local_modules.nf")
 def subworkflowsDir = "${baseDir}/../BioNextflow/subworkflows"
 def nanoConScript = file("$baseDir/bin/NanoConsensus.R")
